@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créativité&Environnement</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 24%;
+
+            height: auto;
+            text-align: center;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            transition: transform .2s;
+            border-radius: 6px;
+            color: black;
+            /*  border: 2px solid #73AD21;*/
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.432);
+            /* Should be removed. Only for demonstration */
+        }
+
+        .column:hover {
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -webkit-transform: scale(1.1);
+            /* Safari 3-8 */
+            transform: scale(1.1);
+        }
+
+        .daddy {
+            float: center;
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            text-align: center;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            padding-top: 2%;
+
+            background-color: rgb(224, 224, 224);
+        }
+
+        .topright {
+            position: fixed;
+            bottom: 0px;
+
+            left: 0px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        a:active {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color: rgb(41, 41, 41); font-size: XXX-large;">ENJEUX ENVIRONNEMENTAUX</h1>
+    <!-- <div class="topright"> <img style="height: 20%; width: 20%;" src="images/titre.png" alt=""></div> -->
+
+    <div class="daddy">
+        <p style="text-align: center;">
+        <div class="column" style="background-color:#9ddfc9;">
+            <a href="pages/deforestationInfos.html">
+                <img src="images/deforestation.svg" alt="">
+                <h2>Déforestation</h2>
+                <p>Some text..</p>
+            </a>
+        </div>
+        <div class="column" style="background-color:#f5e2a3;">
+
+            <img src="images/aire.svg" alt="">
+            <h2>Pollution de l'aire</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#b1ebf6;">
+
+            <img src="images/ocean.svg" alt="">
+            <h2>Pollution des océans</h2>
+            <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#ffc296;">
+
+            <img src="images/gaspillage.svg" alt="">
+            <h2>Gaspillage alimentaire</h2>
+            <p>Some text..</p>
+        </div>
+        </p>
+    </div>
+
+</body>
+
+</html>
